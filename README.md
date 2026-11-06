@@ -97,9 +97,14 @@ This creates:
 The embedding model is downloaded by Sentence Transformers the first time it is used, so an internet connection may be required on the first
 run.
 
-###Run the Application
+### Run the Application
+
 From the project root, run:
 '''streamlit run app.py'''
+
+#### Application Image : 
+<img width="1908" height="768" alt="Screenshot 2026-11-07 013507" src="https://github.com/user-attachments/assets/9351eacd-fa76-483d-ba1b-3c04477e61fd" />
+<img width="997" height="350" alt="Screenshot 2026-11-07 013517" src="https://github.com/user-attachments/assets/eeb1f056-89d2-4b41-9325-0a80883c2bf8" />
 
 
 
