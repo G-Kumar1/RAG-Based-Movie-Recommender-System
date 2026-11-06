@@ -4,20 +4,18 @@ A content-based movie recommendation application that uses sentence embeddings a
 matching a user's preferences. The application provides a simple interactive interface built with Streamlit.
 
 ##Features
-- Collects movie preferences through an interactive Streamlit
-  interface.
+- Collects movie preferences through an interactive Streamlit interface.
   
 - Creates semantic embeddings from each movie's genre and overview.
-- 
-- Uses FAISS with L2 distance search to retrieve the three closest
-  matches.
+ 
+- Uses FAISS with L2 distance search to retrieve the three closest matches.
   
 - Stores the movie metadata and vector index for reuse.
-- 
-- Displays recommended movie titles with preference-based
-  explanations.
+  
+- Displays recommended movie titles with preference-based explanations.
 
 ##Tech Stack
+
 - Python
   
 - Streamlit - interactive web interface
@@ -31,24 +29,36 @@ matching a user's preferences. The application provides a simple interactive int
 - Pickle - persistence of the processed movie DataFrame
 
 ###Project Structure
+
 RAG-Movie-Recommender/
+
 ├── app.py
+
 ├── data/
+
 │   └── movies_data.csv
+
 ├── rag/
+
 │   ├── __init__.py
+
 │   ├── embeddings.py
+
 │   ├── retriever.py
+
 │   └── recommender.py
+
 ├── movies.index
+
 ├── movies.pkl
+
 ├── requirements.txt
+
 └── README.md
-The exact layout can be adjusted to match your repository. The Streamlit
-app imports retrieve_movies and generate_recommendation from the
-rag package.
+
 
 ###How It Works
+
 1. Prepare movie text: The embedding pipeline combines each movie's Genre and Overview fields.
 
 2. Generate embeddings: The all-MiniLM-L6-v2 Sentence Transformer converts the combined text into dense vectors.
@@ -110,6 +120,4 @@ streamlit run app.py
 
 - Add error handling for missing or incompatible index and metadata files.
 
-Add the license applicable to this repository. Do not assume the dataset
-or its metadata can be redistributed under the same license as your
-code.
+
